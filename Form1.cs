@@ -6,5 +6,16 @@ namespace Vođenje_resotrana
         {
             InitializeComponent();
         }
+
+        private void btnGost_Click(object sender, EventArgs e)
+        {
+            Form Gost = new Gost();
+            Gost.Show();
+        }
+
+        private void btnUpravitelj_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

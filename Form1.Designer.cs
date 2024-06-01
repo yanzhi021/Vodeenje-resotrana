@@ -28,12 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            pictureBox1 = new PictureBox();
+            btnGost = new Button();
+            btnUpravitelj = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Script MT Bold", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(33, 21);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(356, 80);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "Biser Orijenta";
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Viner Hand ITC", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(379, 252);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(240, 102);
+            textBox2.TabIndex = 1;
+            textBox2.Text = "Ulica Jurje Dobrilina 1\r\n021 486 776\r\nradno vrijeme: 11-23 h";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(395, 21);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(224, 225);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // btnGost
+            // 
+            btnGost.Location = new Point(21, 289);
+            btnGost.Name = "btnGost";
+            btnGost.Size = new Size(94, 29);
+            btnGost.TabIndex = 3;
+            btnGost.Text = "Gost";
+            btnGost.UseVisualStyleBackColor = true;
+            btnGost.Click += btnGost_Click;
+            // 
+            // btnUpravitelj
+            // 
+            btnUpravitelj.Location = new Point(21, 230);
+            btnUpravitelj.Name = "btnUpravitelj";
+            btnUpravitelj.Size = new Size(87, 29);
+            btnUpravitelj.TabIndex = 4;
+            btnUpravitelj.Text = "Upravitelj";
+            btnUpravitelj.UseVisualStyleBackColor = true;
+            btnUpravitelj.Click += btnUpravitelj_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
+            ClientSize = new Size(640, 360);
+            Controls.Add(btnUpravitelj);
+            Controls.Add(btnGost);
+            Controls.Add(pictureBox1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Name = "Form1";
+            Text = "pocetnastrana ";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private PictureBox pictureBox1;
+        private Button btnGost;
+        private Button btnUpravitelj;
     }
 }
